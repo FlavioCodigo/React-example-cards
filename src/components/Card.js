@@ -3,7 +3,7 @@ import './Cards.css'
 
 function Card({ title, imgSource, url, text }) {
   return (
-    <div className='card text-center bg-dark'>
+    <div className='card text-center bg-dark animate__animated animate__backInLeft'>
       <div className='overflow'>
         <img src={imgSource} alt='' className='card-img-top' />
       </div>
