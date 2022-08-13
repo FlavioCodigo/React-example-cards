@@ -1,16 +1,18 @@
 import React from 'react'
-import lobo1 from '../assets/img/lobo1.jpg' 
 
-function Card() {
+function Card({title, imgSource, url, text}) {
+
   return (
-    <div className='card'>
-      <img src={lobo1} alt='' />
-      <div className='card-body'>
-        <div className='card-title'>Card</div>
-        <div className='card-text text-secondary'>
-          lorem ipsum dolor sit amet, consectetur adipiscing Lorem ipsum dolor
-          sit amet, consectetur adip
-        </div>
+    <div className='card text-center bg-dark'>
+      <img src={imgSource} alt='' />
+      <div className='card-body text-light'>
+        <h4 className='card-title'>{title}</h4>
+        <p className='card-text text-secondary'>
+          {text}
+        </p>
+        <a href={url} className='btn btn-secondary rounded-0'>
+          Más Info 
+        </a>
       </div>
     </div>
   )
